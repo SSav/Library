@@ -1,0 +1,12 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page pageEncoding="UTF-8" %>
+<link href="resources/css/style_main.css" rel="stylesheet" type="text/css">
+
+<div class="letters">
+    <c:forEach items="${russianLetters}" var="letter">       
+		<a href="books-by-letter.as?letter=${letter}">${letter}</a>
+	</c:forEach>
+   
+</div>
+
+
